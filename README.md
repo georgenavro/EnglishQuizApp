@@ -1,8 +1,13 @@
-# English QA App – Backend
+# English QA App
 
-Backend API for an English Question & Answer application built with **C# and ASP.NET Core**.
+A full-stack English Question & Answer application built with **C#, ASP.NET Core, Entity Framework Core, SQLite, and React**.
+
+The project includes a RESTful backend API and a React frontend that work together to provide an application for managing 
+and working with English questions and answers.
 
 ## Technologies
+
+### Backend
 
 * C#
 * ASP.NET Core Web API
@@ -12,16 +17,24 @@ Backend API for an English Question & Answer application built with **C# and ASP
 * Swagger / OpenAPI
 * LINQ
 
+### Frontend
+
+* React
+* JavaScript
+* HTML
+* CSS
+* Axios
+
 ## Features
 
 * User authentication and authorization
 * Question and answer management
 * CRUD operations
 * Database integration with Entity Framework Core
-* Repository and service-based architecture
-* DTOs for API data transfer
 * JWT-based authentication
 * Filtering and pagination
+* RESTful API
+* Communication between the React frontend and ASP.NET Core backend
 
 ## Architecture
 
@@ -34,7 +47,27 @@ The backend is organized into separate layers:
 * **Models** – Represent application entities
 * **Data** – Contains database and Entity Framework Core configuration
 
-## About the Project
+The frontend is built separately using React and communicates with the backend through the API.
 
-This project was built for learning and practical experience with backend development using 
-**C#, ASP.NET Core, Entity Framework Core, REST APIs, authentication, and database integration**.
+## How It Works
+
+The application follows a client-server architecture.
+
+The **React frontend** communicates with the **ASP.NET Core Web API** through HTTP requests. The backend handles the application logic, authentication, and database operations using **Entity Framework Core** and **SQLite**.
+
+
+## Authentication
+
+The backend uses **JWT-based authentication and authorization** to control access to protected API functionality.
+
+## Database
+
+The application uses **SQLite** with **Entity Framework Core** for data persistence.
+
+## Purpose
+
+This project was built for learning and practical experience with **full-stack web development**.
+
+It provided practical experience with building a backend API using **C# and ASP.NET Core**, working with databases through **Entity Framework Core**, implementing authentication and authorization, and connecting a **React frontend** to a REST API.
+
+
