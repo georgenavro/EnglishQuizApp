@@ -1,0 +1,117 @@
+.loginForm {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  padding: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 32px;
+  color: rgb(59, 170, 167);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.loginInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto 1.5rem;
+  position: relative;
+}
+
+.loginInputs .icon {
+  position: absolute;
+  left: -0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #0d0c22;
+}
+
+.loginInputs input {
+  width: 100%;
+  height: 45px;
+  padding-left: 2.5rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  outline: none;
+  font-size: medium;
+  color: #0d0c22;
+}
+
+.typeBut {
+  display: block;
+  width: 70%;
+  padding: 12px 0;
+  margin: 1rem auto;
+  font-weight: bold;
+  background-color: #f5ba13;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.4s ease;
+  right: 50px;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(252, 3, 3);
+  background-color: white;
+  opacity: 85%;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+/* === Animation states === */
+.setColor-animation {
+  background-color: #78b9ff;
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.removeTitles {
+  display: none;
+}
+
+/* === Responsive for Tablets & Desktops === */
+@media (min-width: 768px) {
+  .loginForm {
+    width: 500px;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .typeBut {
+    width: 60%;
+    font-size: 1.1rem;
+    right: 0px;
+  }
+}

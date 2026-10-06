@@ -1,0 +1,95 @@
+.selectTable{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.selectTable select{
+  text-align: center;
+  width: 50%;
+  padding: 0.6rem;
+  cursor: pointer;
+  border: none;
+}
+ .tableWrapper{
+  display: flex;
+  flex-direction: column;
+  
+  
+ }
+.tableWrapper table,th{
+  background-color: aliceblue;
+  align-self: center;
+
+}
+.paginationChangePageTestResults,
+.paginationChangePage { 
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;           
+  margin-top: 1rem;   
+}
+
+.paginationChangePage button { 
+  border-radius: 50%; 
+  padding: 0.6rem;
+  cursor: pointer;
+  background-color: #86e4fa;
+  box-shadow: 0 0 10px rgba(0, 170, 248, 0.5);
+  width: 40px;  
+  height: 40px;
+  font-size: 0.9rem;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.paginationChangePage button:hover {
+  background-color: #00aaf8;
+  color: white;
+  transform: scale(1.1); 
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.active{
+  background-color: #2badf8 !important;
+  color: black;
+  font-weight: bold;
+  animation: pulse 1.5s infinite;
+}
+.paginationChangePageTestResults button{
+ border-radius: 10%; 
+  padding: 0.6rem;
+  cursor: pointer;
+  background-color: #86e4fa;
+  box-shadow: 0px 0px 10px 10px rgba(44, 198, 200, 0.5);
+  width: auto;  
+  height: 40px;
+  font-size: 1rem;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+}
+.paginationChangePageTestResults button:hover{
+   background-color: #00aaf8;
+  color: white;
+  transform: scale(1.1); 
+}
+.activeResult{
+  background-color: #2badf8 !important;
+  color: black;
+  font-weight: bold;
+  animation: pulse 1.5s infinite;
+}
